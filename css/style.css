@@ -1,0 +1,338 @@
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/Roboto-Bold.woff2") format("woff2");
+    src: url("../fonts/Roboto-Bold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/Roboto-BlackItalic.woff2") format("woff2");
+    src: url("../fonts/Roboto-BlackItalic.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/Roboto-Italic.woff2") format("woff2");
+    src: url("../fonts/Roboto-Italic.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/Roboto-Black.woff2") format("woff2");
+    src: url("../fonts/Roboto-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/Roboto-Regular.woff2") format("woff2");
+    src: url("../fonts/Roboto-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/Roboto-Light.woff2") format("woff2");
+    src: url("../fonts/Roboto-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/Roboto-Medium.woff2") format("woff2");
+    src: url("../fonts/Roboto-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0 auto;
+    height: auto;
+    font-size: 16px;
+    font-family: "roboto", Arial, Helvetica, sans-serif;
+}
+
+.list__reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1440px;
+    max-width: 77%;
+}
+
+.header {
+    width: 1440px;
+    height: 80px;
+    background-color: #3F2AFF;
+}
+
+.nav-link {
+    color: #FFFFFF;
+}
+
+
+.nav-item:not(:last-child) {
+    margin-right: 56px;
+}
+
+.main__hero {
+    width: 1440px;
+    height: 700px;
+    background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+}
+
+.main__hero_content {
+    width: 1110px;
+}
+
+.main__hero_text {
+    padding-top: 130px;
+    color: #FFFFFF;
+}
+
+.main__hero_titel {
+    width: 459px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 100%;
+}
+
+.main__hero_stream {
+    margin-top: 30px;
+}
+
+.main__hero_btn {
+    margin-top: 70px;
+}
+
+.main__hero_img {
+    max-width: 540px;
+    padding-top: 15px;
+}
+
+.main__hero_btn {
+    width: 270px;
+}
+
+.main__hero_btn-text {
+    border-radius: 20px;
+    background-color: #3F2AFF;
+    padding: 24px 75.5px;
+    color: #FFF;
+}
+
+@media (max-width:770px) {
+    .main__hero_img { 
+        display: none;
+    }
+
+    .main__hero_stream {
+        max-width: 345px;
+    }
+}
+
+
+.main__about {
+    width: 1440px;
+    background: #FFFFFF;
+}
+
+.main__about_content {}
+
+.main__about__titlle {
+    margin-top: 80px;
+    max-width: 380px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    color: #2E2B44;
+}
+
+.main__about_stream {
+    margin-top: 30px;
+    min-width: 380px;
+    line-height: 150%;
+    color: #666666;
+}
+
+.main__about_img {
+    margin-top: 102px;
+}
+
+@media (max-width:450px) {
+    .main__about_img {
+        display: none;
+    }
+
+    .main__about_benefits {
+        flex-direction: column;
+    }
+}
+
+.main__about_benefits {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: #666666;
+}
+
+.main__teachers {
+    margin-top: 80px;
+    width: 1440px;
+    height: 576px;
+    background: #212133;
+}
+
+.main__teachers_photo {
+    margin-top: 30px;
+}
+
+.main__techers_title {
+    padding-top: 80px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    color: #FFF;
+}
+
+.main__teachers_name {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFF;
+}
+
+.main__teachers_photo {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.main__teachers_text {
+    margin-top: 15px;
+    color: #FFFFFF;
+}
+
+.main__courses {
+    background: #FFFFFF;
+}
+
+.main__courses_title {
+    margin-top: 80px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    color: #212133;
+}
+
+.main__courses_content {
+    margin-top: 30px;
+}
+
+.main__cours_img-1 {
+    max-width: 539px;
+    height: 180px;
+    background-image: url('../img/pic-1.jpg');
+    border-radius: 20px 20px 0 0;
+    background-repeat: no-repeat;
+}
+
+.main__cours_img-2 {
+    max-width: 539px;
+    height: 180px;
+    background-image: url('../img/pic-2.jpg');
+    border-radius: 20px 20px 0 0;
+    background-repeat: no-repeat;
+}
+
+.main__cours_img-3 {
+    max-width: 539px;
+    height: 180px;
+    background-image: url('../img/pic-3.jpg');
+    border-radius: 20px 20px 0 0;
+    background-repeat: no-repeat;
+}
+
+.main__cours_img-4 {
+    max-width: 539px;
+    height: 180px;
+    background-image: url('../img/pic-4.jpg');
+    border-radius: 20px 20px 0 0;
+    background-repeat: no-repeat;
+}
+
+.main__cours_block {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.main__cours_text {
+    max-width: 539px;
+    min-height: 300px;
+    padding-left: 30px;
+    border-radius: 0 0 20px 20px;
+    background-color: #EDF0F9;
+}
+
+.main__cours_title {
+    padding-top: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #212133;
+}
+
+.main__cours_stream {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #666666;
+}
+
+.main__cours_btn {
+    position: absolute;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 202px;
+}
+
+.main__cours_btn-text {
+    border-radius: 20px;
+    background-color: #3F2AFF;
+    padding: 20px 59px;
+    color: #FFF;
+}
+
+.main__courses {
+    margin-bottom: 80px;
+}
+
+.footer {
+    width: 1440px;
+    height: 80px;
+    background: #2E2B44;
+}
+
+.footer__media {
+    width: 20px;
+    height: 20px;
+    line-height: 80px;
+}
+
+.footer__media:not(:last-child) {
+    margin-right: 35px;
+}
