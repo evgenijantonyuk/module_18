@@ -70,12 +70,12 @@ body {
 
 .container {
     margin: 0 auto;
-    width: 1440px;
+    max-width: 1440px;
     max-width: 77%;
 }
 
 .header {
-    width: 1440px;
+    max-width: 1440px;
     height: 80px;
     background-color: #3F2AFF;
 }
@@ -90,13 +90,13 @@ body {
 }
 
 .main__hero {
-    width: 1440px;
+    max-width: 1440px;
     height: 700px;
     background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
 }
 
 .main__hero_content {
-    width: 1110px;
+    max-width: 1110px;
 }
 
 .main__hero_text {
@@ -105,7 +105,7 @@ body {
 }
 
 .main__hero_titel {
-    width: 459px;
+    max-width: 459px;
     font-weight: 700;
     font-size: 60px;
     line-height: 100%;
@@ -135,23 +135,51 @@ body {
     color: #FFF;
 }
 
+@media (max-width:950px) {
+    .main__hero_img {
+        max-width: 311px;
+    }
+}
+
 @media (max-width:770px) {
-    .main__hero_img { 
-        display: none;
+    .main__hero_img {
+        width: 311px;
+    }
+
+    .main__hero_titel {
+        font-size: 50px;
     }
 
     .main__hero_stream {
         max-width: 345px;
     }
+
+    .main__hero_titel {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:575px) {
+    .main__hero_img {
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    .main__hero_btn {
+        width: 213px;
+    }
+
+    .main__hero_btn-text {
+        padding: 20px 53px;
+    }
 }
 
 
 .main__about {
-    width: 1440px;
+    max-width: 1440px;
     background: #FFFFFF;
 }
-
-.main__about_content {}
 
 .main__about__titlle {
     margin-top: 80px;
@@ -173,13 +201,50 @@ body {
     margin-top: 102px;
 }
 
-@media (max-width:450px) {
+@media (max-width: 700px) {
+    .main__about_text {
+        max-width: 450px;
+    }
+
+    .main__about_img {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 520px) {
+    .main__about_img {
+        width: 150px;
+        margin-right: 30px;
+    }
+}
+
+.main__about_benefit {
+    width: 30%;
+}
+.main__about_benefits-img {
+    width: 80px;
+}
+
+@media (max-width: 1300px) {
+    .main__about_img {
+        flex-direction: row;
+    }
+        .main__about_text {
+            flex-direction: row;
+        }
+}
+
+@media (max-width:320px) {
     .main__about_img {
         display: none;
     }
 
-    .main__about_benefits {
+    .main__about_benefits-img {
         flex-direction: column;
+    }
+
+    .main__about_benefits-text {
+        margin-bottom: 42px;
     }
 }
 
@@ -191,15 +256,28 @@ body {
     color: #666666;
 }
 
+@media (max-widyh: 1308px) {
+    .main__about_benefits {
+        flex-direction: column;
+    }
+
+    .main__about_benefits-img {
+        flex-direction: column;
+    }
+}
+
+
 .main__teachers {
+    max-width: 1440px;
     margin-top: 80px;
-    width: 1440px;
     height: 576px;
     background: #212133;
 }
 
 .main__teachers_photo {
+    max-width: 255px;
     margin-top: 30px;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .main__techers_title {
@@ -216,10 +294,6 @@ body {
     font-size: 18px;
     line-height: 150%;
     color: #FFF;
-}
-
-.main__teachers_photo {
-    border-radius: 20px 20px 0px 0px;
 }
 
 .main__teachers_text {
@@ -276,14 +350,16 @@ body {
 }
 
 .main__cours_block {
-    position: relative;
     margin-bottom: 30px;
 }
 
 .main__cours_text {
+    display: flex;
+    flex-direction: column;
     max-width: 539px;
     min-height: 300px;
     padding-left: 30px;
+    justify-content: space-between;
     border-radius: 0 0 20px 20px;
     background-color: #EDF0F9;
 }
@@ -304,9 +380,6 @@ body {
 }
 
 .main__cours_btn {
-    position: absolute;
-    margin-top: 30px;
-    margin-bottom: 30px;
     width: 202px;
 }
 
@@ -317,12 +390,8 @@ body {
     color: #FFF;
 }
 
-.main__courses {
-    margin-bottom: 80px;
-}
-
 .footer {
-    width: 1440px;
+    max-width: 1440px;
     height: 80px;
     background: #2E2B44;
 }
